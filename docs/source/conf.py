@@ -24,7 +24,7 @@ extensions = ["myst_parser",'sphinx_rtd_dark_mode',"sphinx_multiversion",]
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_rtd_dark_mode'
-html_logo = "_images/rexhue_logo_inv.png"
+html_logo = "_static/media/rexhue_logo_inv.png"
 html_static_path = ['_static']
 
 html_sidebars = {
