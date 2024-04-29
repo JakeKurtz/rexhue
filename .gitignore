@@ -1,2 +1,4 @@
 /docs/source/_static/media/*/[0-9]*.png
+/docs/source/_static/media/flake_opaque_ior
+/docs/source/_static/media/flake_trans_ior
 _build/
