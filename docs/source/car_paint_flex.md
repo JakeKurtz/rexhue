@@ -78,10 +78,10 @@ The refractive index of the internal medium. Typically in the range of 1.33 and 
 
 #### Tint
 
-Sets the color of the flakes tint in the paint.
+Sets the color of the flakes tint in the paint. Since the flakes are embedded inside the base coat, the color of the base coat will influence the flake tint.
 <figure>
   <img src="_static/media/flake_tint/strip.png" alt="my alt text"/>
-  <figcaption text-align="center">Variation of flake tints, with absorption value of 5.5</figcaption>
+  <figcaption text-align="center">Variation of flake tints</figcaption>
 </figure>
 
 #### Scale
@@ -114,14 +114,10 @@ Specifies the roughness of the flakes.
 
 #### Absorption
 
-```{tip}
-For realistic results, try using an absorption with a value higher than 0. It gives a better impression of the flakes being embedded in the paint.
-```
-
-Specifies the degree of light absorbed by the pigment before it is reflected off the flakes.
+Specifies the degree of light absorbed by the pigment before it is reflected off the flakes. 
 <figure>
   <img src="_static/media/flake_absorption/strip.png" alt="my alt text"/>
-  <figcaption text-align="center">Absorption from 1.0 to 30.0</figcaption>
+  <figcaption text-align="center">Absorption from 1.0 to 5.0</figcaption>
 </figure>
 
 #### Weight

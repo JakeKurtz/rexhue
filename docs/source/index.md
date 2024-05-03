@@ -4,7 +4,7 @@
 % contain the root `toctree` directive.
 
 # RexHue Paints Documentation
-![alt text](../rexhue_splash.png)
+![alt text](_static/media/main_image.png)
 
 ```{toctree}
 :caption: 'Contents:'
@@ -15,6 +15,5 @@ car_paint
 car_paint_flex
 car_paint_opaque_flakes
 car_paint_transparent_flakes
-help
 
 ```

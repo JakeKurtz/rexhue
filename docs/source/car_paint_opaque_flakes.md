@@ -2,6 +2,8 @@
 
 Has the same three layers (base coat, metallic flakes, and a clear top coat) where the metallic flakes are coated in a thinfilm.
 
+This shader was designed to simulate ChromaFlair pigments. It's comprised of highly reflective aluminium flakes that are coated with a thin layer of magnesium fluoride, which is embedded in an extremely thin layer of chromium.
+
 <img src="_static/media/c_opaque_flakes.png" alt="my alt text" width="50%"/>
 
 ## Inputs
@@ -70,7 +72,7 @@ Specifies the roughness of the flakes.
 Specifies the degree of light absorbed by the pigment before it is reflected off the flakes.
 <figure>
   <img src="_static/media/flake_opaque_absorption/strip.png" alt="my alt text"/>
-  <figcaption text-align="center">Absorption from 1.0 to 10.0, with a red base coat</figcaption>
+  <figcaption text-align="center">Absorption from 1.0 to 5.0, with a red base coat</figcaption>
 </figure>
 
 #### Weight

@@ -2,6 +2,8 @@
 
 Has the same three layers (base coat, flakes, and a clear top coat), where the flakes are transparent and coated with a thinfilm.
 
+This shader was designed to simulate pearlescent mica flakes, which are commonly found in car-paint and makeup. These where historically made up of crushed up nacre (Mother of Pearl). Since the flakes are transparent, light can refract through dozens to hundreds of thinfilm layers. This results in brighter reflections, in comparison to the opaque version, and creates interesting effects when the base coat color is changed.
+
 <img src="_static/media/c_trans_flakes.png" alt="my alt text" width="50%"/>
 
 ## Inputs
@@ -70,7 +72,7 @@ Specifies the roughness of the flakes.
 Specifies the degree of light absorbed by the pigment before it is reflected off the flakes.
 <figure>
   <img src="_static/media/flake_trans_absorption/strip.png" alt="my alt text"/>
-  <figcaption text-align="center">Absorption from 1.0 to 10.0, with a red base coat</figcaption>
+  <figcaption text-align="center">Absorption from 1.0 to 5.0, with a red base coat</figcaption>
 </figure>
 
 #### Weight
