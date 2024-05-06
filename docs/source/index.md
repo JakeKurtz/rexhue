@@ -6,6 +6,11 @@
 # RexHue Paints Documentation
 ![alt text](_static/media/main_image.png)
 
+## Where to Buy
+
+- [GumRoad - 7.49](https://jakekurtz.gumroad.com/l/rexhue)
+- [BlenderMarket - 9.99](https://blendermarket.com/products/rexhue)
+
 ```{toctree}
 :caption: 'Contents:'
 :maxdepth: 1
