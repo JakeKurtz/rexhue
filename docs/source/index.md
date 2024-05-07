@@ -8,8 +8,8 @@
 
 ## Where to Buy
 
-- [GumRoad - 7.49](https://jakekurtz.gumroad.com/l/rexhue)
-- [BlenderMarket - 9.99](https://blendermarket.com/products/rexhue)
+- [GumRoad - 1.99](https://jakekurtz.gumroad.com/l/rexhue)
+- [BlenderMarket - 2.99](https://blendermarket.com/products/rexhue)
 
 ```{toctree}
 :caption: 'Contents:'
