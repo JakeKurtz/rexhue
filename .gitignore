@@ -1,2 +1,4 @@
-/docs/source/_static/media/*/[0-9]*.png
+[0-9]*.png
+range.txt
 _build/
+.venv/

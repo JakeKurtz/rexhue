@@ -3,7 +3,7 @@
 % You can adapt this file completely to your liking, but it should at least
 % contain the root `toctree` directive.
 
-# RexHue Paints Documentation
+# The RexHue Asset Library
 ![alt text](_static/media/main_image.png)
 
 ## Where to Buy
@@ -13,12 +13,11 @@
 
 ```{toctree}
 :caption: 'Contents:'
-:maxdepth: 1
+:maxdepth: 2
 
 install
-car_paint
-car_paint_flex
-car_paint_opaque_flakes
-car_paint_transparent_flakes
+materials/index
+shaders/index
+textures/index
 
 ```

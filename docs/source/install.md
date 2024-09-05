@@ -1,6 +1,6 @@
 # Installation
 
-## Installing The RexHue Assest Library
+## Installing The RexHue Asset Library
 
 - Navigate to the location where **Rexhue Assets.zip** was installed, and extract it to where you keep your assets. For instance: **C:\\Users\\<your_user_name_here>\\Documents\\Blender\\**
 - Open Blender
