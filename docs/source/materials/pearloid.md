@@ -5,9 +5,34 @@
 ### Base
 
 #### Color
+
+<figure>
+  <img src="../_static/media/pearloid/base/color/strip.png" alt="my alt text"/>
+  <figcaption text-align="center"></figcaption>
+</figure>
+
+
 #### Roughness
+
+<figure>
+  <img src="../_static/media/pearloid/base/roughness/strip.png" alt="my alt text"/>
+  <figcaption text-align="center"></figcaption>
+</figure>
+
+
 #### Transmission Weight
+
+<figure>
+  <img src="../_static/media/pearloid/base/transmission_weight/strip.png" alt="my alt text"/>
+  <figcaption text-align="center"></figcaption>
+</figure>
+
 #### IOR
+
+<figure>
+  <img src="../_static/media/pearloid/base/ior/strip.png" alt="my alt text"/>
+  <figcaption text-align="center"></figcaption>
+</figure>
 
 ### Flakes
 
@@ -111,7 +136,19 @@
 ### Pearlescence
 
 #### Weight
+
+<figure>
+  <img src="../_static/media/pearloid/pearlescence/weight/strip.png" alt="my alt text"/>
+  <figcaption text-align="center"></figcaption>
+</figure>
+
 #### Thickness (nm)
+
+<figure>
+  <img src="../_static/media/pearloid/pearlescence/thickness/strip.png" alt="my alt text"/>
+  <figcaption text-align="center"></figcaption>
+</figure>
+
 #### IOR
 
 ### Diffraction
@@ -140,8 +177,25 @@
 ### Coat
 
 #### Weight
+
+<figure>
+  <img src="../_static/media/pearloid/coat/weight/strip.png" alt="my alt text"/>
+  <figcaption text-align="center"></figcaption>
+</figure>
+
 #### Roughness
+
+<figure>
+  <img src="../_static/media/pearloid/coat/roughness/strip.png" alt="my alt text"/>
+  <figcaption text-align="center"></figcaption>
+</figure>
+
 #### Tint
+
+<figure>
+  <img src="../_static/media/pearloid/coat/tint/strip.png" alt="my alt text"/>
+  <figcaption text-align="center"></figcaption>
+</figure>
 
 ## Outputs
 
