@@ -1,1 +1,5 @@
 # Diffraction
+
+```{note}
+Coming soon...
+```
