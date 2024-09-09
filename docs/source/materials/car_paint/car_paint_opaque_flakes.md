@@ -1,10 +1,10 @@
-# Chameleon Paint w. Transparent Flakes
+# Chameleon Paint w. Opaque Flakes
 
-Has the same three layers (base coat, flakes, and a clear top coat), where the flakes are transparent and coated with a thinfilm.
+Has the same three layers (base coat, metallic flakes, and a clear top coat) where the metallic flakes are coated in a thinfilm.
 
-This shader was designed to simulate pearlescent mica flakes, which are commonly found in car-paint and makeup. These where historically made up of crushed up nacre (Mother of Pearl). Since the flakes are transparent, light can refract through dozens to hundreds of thinfilm layers. This results in brighter reflections, in comparison to the opaque version, and creates interesting effects when the base coat color is changed.
+This shader was designed to simulate ChromaFlair pigments. It's comprised of highly reflective aluminium flakes that are coated with a thin layer of magnesium fluoride, which is embedded in an extremely thin layer of chromium.
 
-<img src="../_static/media/c_trans_flakes.png" alt="my alt text" width="50%"/>
+<img src="../../_static/media/c_opaque_flakes.png" alt="my alt text" width="50%"/>
 
 ## Inputs
 
@@ -13,28 +13,28 @@ This shader was designed to simulate pearlescent mica flakes, which are commonly
 #### Color
 Specifies the base color of the paint.
 <figure>
-  <img src="../_static/media/paint/base_coat/color/strip.png" alt="my alt text"/>
+  <img src="../../_static/media/paint/base_coat/color/strip.png" alt="my alt text"/>
   <figcaption text-align="center">Variation of base colors</figcaption>
 </figure>
 
 #### Metallic
 Controls the metallic appearance of the base paint coat.
 <figure>
-  <img src="../_static/media/paint/base_coat/metal/strip.png" alt="my alt text"/>
+  <img src="../../_static/media/paint/base_coat/metal/strip.png" alt="my alt text"/>
   <figcaption text-align="center">Metallic from 0.0 to 1.0</figcaption>
 </figure>
 
 #### Specular Tint
 Adjusts the tint of the specular highlights.
 <figure>
-  <img src="../_static/media/paint/base_coat/spec_tint/strip.png" alt="my alt text"/>
+  <img src="../../_static/media/paint/base_coat/spec_tint/strip.png" alt="my alt text"/>
   <figcaption text-align="center">From white to orange</figcaption>
 </figure>
 
 #### Roughness
 Controls the roughness of the base paint coat.
 <figure>
-  <img src="../_static/media/paint/base_coat/roughness/strip.png" alt="my alt text"/>
+  <img src="../../_static/media/paint/base_coat/roughness/strip.png" alt="my alt text"/>
   <figcaption text-align="center">Roughness from 0.0 to 1.0</figcaption>
 </figure>
 
@@ -43,42 +43,42 @@ Controls the roughness of the base paint coat.
 #### Scale
 Adjusts the size of the flakes.
 <figure>
-  <img src="../_static/media/paint/flake/trans_scale/strip.png" alt="my alt text"/>
+  <img src="../../_static/media/paint/flake/opaque_scale/strip.png" alt="my alt text"/>
   <figcaption text-align="center">Scale from 250.0 to 5000.0</figcaption>
 </figure>
 
 #### Density
 Controls the density of the flakes.
 <figure>
-  <img src="../_static/media/paint/flake/trans_density/strip.png" alt="my alt text"/>
+  <img src="../../_static/media/paint/flake/opaque_density/strip.png" alt="my alt text"/>
   <figcaption text-align="center">Density from 0.0 to 1.0</figcaption>
 </figure>
 
 #### Variation
 This parameter determines the extent to which flake orientation deviates from the surface normal. A value of 0.0 means minimal deviation, aligning flakes closely with the surface. Higher values intensify the flake effect, making it more pronounced.
 <figure>
-  <img src="../_static/media/paint/flake/trans_var/strip.png" alt="my alt text"/>
+  <img src="../../_static/media/paint/flake/opaque_var/strip.png" alt="my alt text"/>
   <figcaption text-align="center">Variation from 0.0 to 0.3</figcaption>
 </figure>
 
 #### Roughness
 Specifies the roughness of the flakes.
 <figure>
-  <img src="../_static/media/paint/flake/trans_roughness/strip.png" alt="my alt text"/>
+  <img src="../../_static/media/paint/flake/opaque_roughness/strip.png" alt="my alt text"/>
   <figcaption text-align="center">Roughness from 0.0 to 1.0</figcaption>
 </figure>
 
 #### Absorption
 Specifies the degree of light absorbed by the pigment before it is reflected off the flakes.
 <figure>
-  <img src="../_static/media/paint/flake/trans_absorption/strip.png" alt="my alt text"/>
+  <img src="../../_static/media/paint/flake/opaque_absorption/strip.png" alt="my alt text"/>
   <figcaption text-align="center">Absorption from 1.0 to 5.0, with a red base coat</figcaption>
 </figure>
 
 #### Weight
 This multiplier scales the reflection intensity received by the flakes.
 <figure>
-  <img src="../_static/media/paint/flake/trans_weight/strip.png" alt="my alt text"/>
+  <img src="../../_static/media/paint/flake/opaque_weight/strip.png" alt="my alt text"/>
   <figcaption text-align="center">Weight from 0.0 to 1.0</figcaption>
 </figure>
 
@@ -89,38 +89,31 @@ This multiplier scales the reflection intensity received by the flakes.
 <div class="video_container">
     <figure>
         <video width="100%" height="auto" controls loop>
-            <source src="../_static/media/paint/flake/trans_ior/vid.mp4" type="video/mp4">
+            <source src="../../_static/media/paint/flake/opaque_ior/vid.mp4" type="video/mp4">
         </video>
         <figcaption text-align="center">Film IOR from 1.0 to 3.0</figcaption>
     </figure>
     <figure>
         <video width="100%" height="auto" controls loop>
-            <source src="../_static/media/paint/flake/trans_thickness/vid.mp4" type="video/mp4">
+            <source src="../../_static/media/paint/flake/opaque_thickness/vid.mp4" type="video/mp4">
         </video>
         <figcaption text-align="center">Film thickness from 0.0nm to 800.0nm</figcaption>
     </figure>
 </div>
-
-#### Variance
-Controls the variance of the flake film thickness. Lower values are dull and desaturated, higher values are bright and saturated. 
-<figure>
-  <img src="../_static/media/paint/flake/trans_film_var/strip.png" alt="my alt text"/>
-  <figcaption text-align="center">Variance from 0.0 to 50.0</figcaption>
-</figure>
 
 ### Clear Coat
 
 #### Color
 Specifies the color of the clear coat layer.
 <figure>
-  <img src="../_static/media/paint/clear_coat/color/strip.png" alt="my alt text"/>
+  <img src="../../_static/media/paint/clear_coat/color/strip.png" alt="my alt text"/>
   <figcaption text-align="center">Color from black to white</figcaption>
 </figure>
 
 #### Roughness
 Controls the roughness of the clear coat layer.
 <figure>
-  <img src="../_static/media/paint/clear_coat/roughness/strip.png" alt="my alt text"/>
+  <img src="../../_static/media/paint/clear_coat/roughness/strip.png" alt="my alt text"/>
   <figcaption text-align="center">Roughness from 0.0 to 1.0</figcaption>
 </figure>
 

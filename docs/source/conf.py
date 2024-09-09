@@ -26,6 +26,12 @@ html_theme = 'sphinx_rtd_dark_mode'
 html_logo = "_static/media/rexhue_logo_inv.png"
 html_static_path = ['_static']
 
+html_theme_options = {
+    'collapse_navigation': False, 
+    'sticky_navigation': False,
+    'navigation_depth' : -1 #endless depth
+}
+
 html_sidebars = {
     '**': [
         'versioning.html',

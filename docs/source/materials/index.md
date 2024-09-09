@@ -9,10 +9,7 @@
 ```{toctree}
 :maxdepth: 1
 
-car_paint
-car_paint_flex
-car_paint_opaque_flakes
-car_paint_transparent_flakes
+car_paint/index
 pearloid
 
 ```
