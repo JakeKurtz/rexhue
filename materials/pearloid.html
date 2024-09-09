@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pearloid &mdash; RexHue Paints 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=3c20efca" />
+      <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
+      <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=70edf1c7" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Shaders" href="../shaders/index.html" />
+    <link rel="prev" title="Chameleon Paint w. Transparent Flakes" href="car_paint/car_paint_transparent_flakes.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            RexHue Paints
+              <img src="../_static/rexhue_logo_inv.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#installing-the-rexhue-asset-library">Installing The RexHue Asset Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../install.html#adding-your-own-presets">Adding Your Own Presets</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="car_paint/index.html">Car Paint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="car_paint/car_paint.html">Basic Paint</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="car_paint/car_paint.html#inputs">Inputs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint.html#base-coat">Base Coat</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#color">Color</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#metallic">Metallic</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#specular-tint">Specular Tint</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#roughness">Roughness</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint.html#flakes-coat">Flakes Coat</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#tint">Tint</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#scale">Scale</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#density">Density</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#variation">Variation</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#id1">Roughness</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#absorption">Absorption</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#weight">Weight</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint.html#clear-coat">Clear Coat</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#id2">Color</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint.html#id3">Roughness</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="car_paint/car_paint.html#outputs">Outputs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint.html#shader">Shader</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="car_paint/car_paint_flex.html">Flex Paint</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="car_paint/car_paint_flex.html#inputs">Inputs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_flex.html#base-coat">Base Coat</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#color">Color</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#falloff-color">Falloff Color</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#metallic">Metallic</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#roughness">Roughness</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#curve-factor">Curve Factor</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#use-subtractive-color-mixing">Use Subtractive Color Mixing</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#pigment-scatter">Pigment Scatter</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#pigment-ior">Pigment IOR</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_flex.html#flakes-coat">Flakes Coat</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#tint">Tint</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#scale">Scale</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#density">Density</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#variation">Variation</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#id1">Roughness</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#absorption">Absorption</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#weight">Weight</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_flex.html#clear-coat">Clear Coat</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#id2">Color</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_flex.html#id3">Roughness</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="car_paint/car_paint_flex.html#outputs">Outputs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_flex.html#shader">Shader</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html">Chameleon Paint w. Opaque Flakes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#inputs">Inputs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#base-coat">Base Coat</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#color">Color</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#metallic">Metallic</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#specular-tint">Specular Tint</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#roughness">Roughness</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#flakes-coat">Flakes Coat</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#scale">Scale</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#density">Density</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#variation">Variation</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#id1">Roughness</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#absorption">Absorption</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#weight">Weight</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#flakes-film">Flakes Film</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#ior-and-thickness">IOR and Thickness</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#clear-coat">Clear Coat</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#id2">Color</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#id3">Roughness</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#outputs">Outputs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_opaque_flakes.html#shader">Shader</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html">Chameleon Paint w. Transparent Flakes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#inputs">Inputs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#base-coat">Base Coat</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#color">Color</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#metallic">Metallic</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#specular-tint">Specular Tint</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#roughness">Roughness</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#flakes-coat">Flakes Coat</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#scale">Scale</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#density">Density</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#variation">Variation</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#id1">Roughness</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#absorption">Absorption</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#weight">Weight</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#flakes-film">Flakes Film</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#ior-and-thickness">IOR and Thickness</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#variance">Variance</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#clear-coat">Clear Coat</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#id2">Color</a></li>
+<li class="toctree-l6"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#id3">Roughness</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#outputs">Outputs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="car_paint/car_paint_transparent_flakes.html#shader">Shader</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Pearloid</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#inputs">Inputs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#base">Base</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#color">Color</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#roughness">Roughness</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#transmission-weight">Transmission Weight</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ior">IOR</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#flakes">Flakes</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#weight">Weight</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#density">Density</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#tint">Tint</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#scale">Scale</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#randomness">Randomness</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#grain-scale">Grain Scale</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id1">Roughness</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#absorption">Absorption</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#seed">Seed</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#flake-depth">Flake Depth</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#intensity">Intensity</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#threshold">Threshold</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#flake-normal">Flake Normal</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#distance">Distance</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id2">Roughness</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#variation">Variation</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#pearlescence">Pearlescence</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id3">Weight</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#thickness-nm">Thickness (nm)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id4">IOR</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#diffraction">Diffraction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id5">Weight</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#spread">Spread</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#tangent">Tangent</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#coat">Coat</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id6">Weight</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id7">Roughness</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#id8">Tint</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#outputs">Outputs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#shader">Shader</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../shaders/index.html">Shaders</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/diffraction.html">Diffraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/dispersion.html">Dispersion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shaders/pearlescence.html">Pearlescence</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../textures/index.html">Textures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../textures/scratches.html">Scraches</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">RexHue Paints</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Materials</a></li>
+      <li class="breadcrumb-item active">Pearloid</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/materials/pearloid.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This page is under construction.</p>
+</div>
+<section id="pearloid">
+<h1>Pearloid<a class="headerlink" href="#pearloid" title="Link to this heading"></a></h1>
+<p><img alt="alt text" src="../_images/pearloid_banner.png" /></p>
+<p>Pearloid is a type of synthetic material (celluloid plastic) designed to mimic the appearance of mother of pearl. It’s often used in making musical instruments and decorative items, to give a lustrous iridescent finish.</p>
+<section id="inputs">
+<h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
+<section id="base">
+<h3>Base<a class="headerlink" href="#base" title="Link to this heading"></a></h3>
+<section id="color">
+<h4>Color<a class="headerlink" href="#color" title="Link to this heading"></a></h4>
+<p>Specifies the base color.</p>
+<figure>
+  <img src="../_static/media/pearloid/base/color/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Variation of base colors</figcaption>
+</figure>
+</section>
+<section id="roughness">
+<h4>Roughness<a class="headerlink" href="#roughness" title="Link to this heading"></a></h4>
+<p>Controls the roughness of the base layer.</p>
+<figure>
+  <img src="../_static/media/pearloid/base/roughness/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Roughness from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="transmission-weight">
+<h4>Transmission Weight<a class="headerlink" href="#transmission-weight" title="Link to this heading"></a></h4>
+<p>Controls the Transmission Weight of the base layer.</p>
+<figure>
+  <img src="../_static/media/pearloid/base/transmission_weight/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Transmission Weight from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="ior">
+<h4>IOR<a class="headerlink" href="#ior" title="Link to this heading"></a></h4>
+<p>Controls the Index of Refraction of the base layer.</p>
+<figure>
+  <img src="../_static/media/pearloid/base/ior/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">IOR from 1.0 to 4.0</figcaption>
+</figure>
+</section>
+</section>
+<section id="flakes">
+<h3>Flakes<a class="headerlink" href="#flakes" title="Link to this heading"></a></h3>
+<section id="weight">
+<h4>Weight<a class="headerlink" href="#weight" title="Link to this heading"></a></h4>
+<p>This multiplier scales the reflection intensity received by the celluloid flakes.</p>
+<figure>
+  <img src="../_static/media/pearloid/flake/weight/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Weight from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="density">
+<h4>Density<a class="headerlink" href="#density" title="Link to this heading"></a></h4>
+<p>Controls the density of the celluloid flakes.</p>
+<figure>
+  <img src="../_static/media/pearloid/flake/density/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Density from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="tint">
+<h4>Tint<a class="headerlink" href="#tint" title="Link to this heading"></a></h4>
+<p>Sets the color of the flakes tint in the paint.</p>
+<figure>
+  <img src="../_static/media/pearloid/flake/tint/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Variation of flake tints</figcaption>
+</figure>
+</section>
+<section id="scale">
+<h4>Scale<a class="headerlink" href="#scale" title="Link to this heading"></a></h4>
+<p>Adjusts the size of the flakes.</p>
+<figure>
+  <img src="../_static/media/pearloid/flake/scale/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Scale from 3.0 to 60.0</figcaption>
+</figure>
+</section>
+<section id="randomness">
+<h4>Randomness<a class="headerlink" href="#randomness" title="Link to this heading"></a></h4>
+<p>The randomness of the flake shape.</p>
+<figure>
+  <img src="../_static/media/pearloid/flake/randomness/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Randomness from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="grain-scale">
+<h4>Grain Scale<a class="headerlink" href="#grain-scale" title="Link to this heading"></a></h4>
+<figure>
+  <img src="../_static/media/pearloid/flake/grain_scale/strip.png" alt="my alt text"/>
+  <figcaption text-align="center"></figcaption>
+</figure>
+</section>
+<section id="id1">
+<h4>Roughness<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<p>Specifies the roughness of the flakes.</p>
+<figure>
+  <img src="../_static/media/pearloid/flake/roughness/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Roughness from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="absorption">
+<h4>Absorption<a class="headerlink" href="#absorption" title="Link to this heading"></a></h4>
+<p>Specifies the degree of light absorbed by the pigment before it is reflected off the flakes.</p>
+<figure>
+  <img src="../_static/media/pearloid/flake/absorption/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Absorption from 0.0 to 2.0<</figcaption>
+</figure>
+</section>
+<section id="seed">
+<h4>Seed<a class="headerlink" href="#seed" title="Link to this heading"></a></h4>
+</section>
+</section>
+<section id="flake-depth">
+<h3>Flake Depth<a class="headerlink" href="#flake-depth" title="Link to this heading"></a></h3>
+<section id="intensity">
+<h4>Intensity<a class="headerlink" href="#intensity" title="Link to this heading"></a></h4>
+<p>Controls the intensity of the depth seperation between flakes. At 0.0, all flakes have the same depth. At 1.0, flakes will have a large difference in depth.</p>
+<figure>
+  <img src="../_static/media/pearloid/flake/depth_intensity/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Depth Intensity from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="threshold">
+<h4>Threshold<a class="headerlink" href="#threshold" title="Link to this heading"></a></h4>
+<p>Controls the depth at which flakes start to appear.</p>
+<figure>
+  <img src="../_static/media/pearloid/flake/depth_threshold/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Depth Threshold from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+</section>
+<section id="flake-normal">
+<h3>Flake Normal<a class="headerlink" href="#flake-normal" title="Link to this heading"></a></h3>
+<section id="distance">
+<h4>Distance<a class="headerlink" href="#distance" title="Link to this heading"></a></h4>
+<p>Multiplier for the height value to control the overall distance.</p>
+<figure>
+  <img src="../_static/media/pearloid/flake/normal_distance/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Normal Distance from 0.0 to 0.64</figcaption>
+</figure>
+</section>
+<section id="id2">
+<h4>Roughness<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
+<p>Controls the normal map roughness.</p>
+<figure>
+  <img src="../_static/media/pearloid/flake/normal_roughness/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Normal Distance from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="variation">
+<h4>Variation<a class="headerlink" href="#variation" title="Link to this heading"></a></h4>
+<p>This parameter determines the extent to which flake orientation deviates from the surface normal. A value of 0.0 means minimal deviation, aligning flakes closely with the surface. Higher values intensify the flake effect, making it more pronounced.</p>
+<figure>
+  <img src="../_static/media/pearloid/flake/normal_variation/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Normal Variation from 0.0 to 0.2</figcaption>
+</figure>
+</section>
+</section>
+<section id="pearlescence">
+<h3>Pearlescence<a class="headerlink" href="#pearlescence" title="Link to this heading"></a></h3>
+<section id="id3">
+<h4>Weight<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
+<p>Adjusts the intensity of the pearlescent effect.</p>
+<figure>
+  <img src="../_static/media/pearloid/pearlescence/weight/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Pearlescence Weight from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="thickness-nm">
+<h4>Thickness (nm)<a class="headerlink" href="#thickness-nm" title="Link to this heading"></a></h4>
+<p>Controls the thickness (nanometers) of the thinfilm layers.</p>
+<figure>
+  <img src="../_static/media/pearloid/pearlescence/thickness/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Thickness from 450nm to 650nm</figcaption>
+</figure>
+</section>
+<section id="id4">
+<h4>IOR<a class="headerlink" href="#id4" title="Link to this heading"></a></h4>
+</section>
+</section>
+<section id="diffraction">
+<h3>Diffraction<a class="headerlink" href="#diffraction" title="Link to this heading"></a></h3>
+<section id="id5">
+<h4>Weight<a class="headerlink" href="#id5" title="Link to this heading"></a></h4>
+<p>Controls the intensity of the diffraction effect.</p>
+<figure>
+  <img src="../_static/media/pearloid/diffraction/weight/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Diffraction Weight from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="spread">
+<h4>Spread<a class="headerlink" href="#spread" title="Link to this heading"></a></h4>
+<p>Adjusts the spread of the diffraction effect.</p>
+<figure>
+  <img src="../_static/media/pearloid/diffraction/spread/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Diffraction Spread from 0.0 to 10.0</figcaption>
+</figure>
+</section>
+<section id="tangent">
+<h4>Tangent<a class="headerlink" href="#tangent" title="Link to this heading"></a></h4>
+<p>Sets the tangent mapping for diffraction effects.</p>
+<figure>
+  <img src="../_static/media/pearloid/diffraction/tangent/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">UVmap, Y, Z</figcaption>
+</figure>
+</section>
+</section>
+<section id="coat">
+<h3>Coat<a class="headerlink" href="#coat" title="Link to this heading"></a></h3>
+<section id="id6">
+<h4>Weight<a class="headerlink" href="#id6" title="Link to this heading"></a></h4>
+<figure>
+  <img src="../_static/media/pearloid/coat/weight/strip.png" alt="my alt text"/>
+  <figcaption text-align="center"></figcaption>
+</figure>
+</section>
+<section id="id7">
+<h4>Roughness<a class="headerlink" href="#id7" title="Link to this heading"></a></h4>
+<p>Controls the roughness of the clear coat layer.</p>
+<figure>
+  <img src="../_static/media/pearloid/coat/roughness/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Roughness from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="id8">
+<h4>Tint<a class="headerlink" href="#id8" title="Link to this heading"></a></h4>
+<p>Specifies the tint of the clear coat layer.</p>
+<figure>
+  <img src="../_static/media/pearloid/coat/tint/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Variation of tint colors</figcaption>
+</figure>
+</section>
+</section>
+</section>
+<section id="outputs">
+<h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading"></a></h2>
+<section id="shader">
+<h3>Shader<a class="headerlink" href="#shader" title="Link to this heading"></a></h3>
+<p>Standard shader output.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="car_paint/car_paint_transparent_flakes.html" class="btn btn-neutral float-left" title="Chameleon Paint w. Transparent Flakes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../shaders/index.html" class="btn btn-neutral float-right" title="Shaders" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Jake Kurtz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script> 
+
+</body>
+</html>
